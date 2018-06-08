@@ -1,0 +1,6 @@
+app:
+  request-type: 1  # 1=scores, 2=impacts
+  client-id: 3434215
+  measurement-id: 8840669
+  data-file: "src/main/resources/export.json"
+  output-file: "formatted.json"
