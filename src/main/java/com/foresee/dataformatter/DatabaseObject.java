@@ -17,7 +17,7 @@ import java.time.ZonedDateTime;
 @NoArgsConstructor
 @Builder
 public class DatabaseObject {
-    private Long respondentkey;
+    private Long respondentKey;
     private String id;
     private ZonedDateTime timestamp;
     private String key;

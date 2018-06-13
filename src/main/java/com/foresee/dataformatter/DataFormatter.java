@@ -66,7 +66,7 @@ public class DataFormatter {
             InputDataItem inputDataItem = requestDataMap.get(item.getId());
             if (inputDataItem == null) {
                 inputDataItem = InputDataItem.builder()
-                        .key(item.getRespondentkey())
+                        .key(item.getRespondentKey())
                         .id(item.getId())
                         .timestamp(item.getTimestamp())
                         .datapoints(Lists.newArrayList())
