@@ -6,8 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
 
-import java.io.File;
-
 /**
  * @author dustin.benac
  * @since 2/13/2017
@@ -21,9 +19,6 @@ public class Application {
                 .web(false)
                 .application()
                 .run(args);
-
-        File f = new File("./");
-        System.out.println(f.getAbsolutePath());
 
         log.debug("Starting...");
         Stopwatch stopwatch = Stopwatch.createStarted();
