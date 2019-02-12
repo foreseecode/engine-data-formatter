@@ -24,7 +24,7 @@ begin
                 '", "id":"' || rec.id ||
                 '", "timestamp":"' || rec.timestamp ||
                 '", "key":"' || rec.key ||
-                '", "value":' || rec.value ||'}');
+                '", "value":"' || rec.value ||'"}');
     end loop;
     DBMS_OUTPUT.put_line (']}');
 end;
