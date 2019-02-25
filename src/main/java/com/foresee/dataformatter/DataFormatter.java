@@ -21,6 +21,7 @@ public class DataFormatter {
 
     private static final Integer REQUEST_TYPE_SCORES = 1;
     private static final Integer REQUEST_TYPE_IMPACTS = 2;
+    private static final Integer REQUEST_TYPE_NPS = 3;
 
     @Value("${app.request-type}")
     private Integer requestType;
@@ -48,7 +49,7 @@ public class DataFormatter {
                 DatabaseObjectList.class);
 
         EngineRequest engineRequest = new EngineRequest();
-        EngineRequestMetadata.RequestTypeEnum requestTypeEnum = EngineRequestMetadata.RequestTypeEnum.SCORES_AND_IMPACTS;
+        EngineRequestMetadata.RequestTypeEnum requestTypeEnum = EngineRequestMetadata.RequestTypeEnum.SCORES;
         if (REQUEST_TYPE_IMPACTS.equals(requestType)) {
             requestTypeEnum = EngineRequestMetadata.RequestTypeEnum.IMPACTS;
         }
